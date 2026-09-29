@@ -8,10 +8,11 @@ A Telegram bot for downloading media using `yt-dlp`.
 - Media downloading
 - `yt-dlp` support
 - Easy Termux setup
-- Token stored separately from source code
+- Secure token configuration
 
 ## 📋 Requirements
 
+- Android
 - Termux
 - Python 3
 - Git
@@ -19,8 +20,8 @@ A Telegram bot for downloading media using `yt-dlp`.
 
 ## 📦 Installation
 
-### 1. Clone the repository
+### 1. Update Termux
 
 ```bash
-git clone https://github.com/sureshadhikari1812-blip/NANO_BOT-.git
-cd NANO_BOT-
+pkg update -y
+pkg upgrade -y
