@@ -1,5 +1,6 @@
 import os
 import asyncio
+from dotenv import load_dotenv
 import tempfile
 import subprocess
 import re
@@ -24,7 +25,8 @@ from telegram.ext import (
     ContextTypes, filters
 )
 
-BOT_TOKEN = os.getenv("BOT_TOKEN")
+load_dotenv()
+BOT_TOKEN = os.getenv("BOT_TOKEN", "").strip()
 BOT_NAME = "NANO_BOT"
 OWNER = "@Lightyagami_xx"
 
